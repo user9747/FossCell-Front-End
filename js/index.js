@@ -42,7 +42,7 @@ $('.contactLink').click(function(){
 
 
 if("ontouchstart" in window){
-   el.addEventListener('touchmove', touchMoveHandler);
+   el.addEventListener('touchstart', touchMoveHandler);
 }
 
 touchMoveHandler = function(e){
