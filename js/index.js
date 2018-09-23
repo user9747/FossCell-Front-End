@@ -39,7 +39,13 @@ $('.contactLink').click(function(){
   	$('.contact').show();
 });
  //touch screen
- $("*").on('touchmove', function(e){
+
+
+if("ontouchstart" in window){
+   el.addEventListener('touchmove', touchMoveHandler);
+}
+
+touchMoveHandler = function(e){
   console.log(count);
   count = count + (e.originalEvent.deltaY)/3;
   $('.second').toggleClass('second first');
@@ -61,10 +67,4 @@ $('.contactLink').click(function(){
   if(count <= 0){
     count = 50;
   }
- 
-});
-
-// if("ontouchstart" in window){
-//    el.addEventListener('touchmove', touchMoveHandler);
-// }
-
+}
