@@ -27,8 +27,9 @@ $("*").on('wheel', function(e){
 
 $("*").on('touchstart', function(e){
   $("*").on('touchmove', function(e){
+    console.log(e.originalEvent.touches[0].screenY);
   console.log(count);
-  count = count + (e.originalEvent.deltaY)/3;
+  count = count + (e.originalEvent.touches[0].screenY)/3;
   $('.second').toggleClass('second first');
   $('.hidden').removeClass('hidden');
   if(count >= 150 ){
