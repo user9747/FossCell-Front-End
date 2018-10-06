@@ -28,14 +28,14 @@ $("*").on('wheel', function(e){
 $("*").on('touchstart', function(e){
   ts = e.originalEvent.touches[0].clientY
   $("*").on('touchmove', function(e){
-    te = e.originalEvent.changedTouches[0].clientY;
+    te = e.originalEvent.changedTouches[0].clientX;
     // console.log(e.originalEvent.touches[0].screenY);
-    console.log(e.originalEvent.touches[0].clientY)
+    console.log(e.originalEvent.touches[0].clientX)
   // console.log(count);
   if(ts>te)
-    count = count + (e.originalEvent.touches[0].clientY)/3;
+    count = count + (e.originalEvent.touches[0].clientX)/3;
   else
-    count = count - (e.originalEvent.touches[0].clientY)/3;
+    count = count - (e.originalEvent.touches[0].clientX)/3;
    
   $('.second').toggleClass('second first');
   $('.hidden').removeClass('hidden');
