@@ -33,9 +33,9 @@ $("*").on('touchstart', function(e){
     console.log(e.originalEvent.touches[0].clientY)
   // console.log(count);
   if(ts>te)
-    count = count + (e.originalEvent.touches[0].screenY)/3;
+    count = count + (e.originalEvent.touches[0].clientY)/3;
   else
-    count = count - (e.originalEvent.touches[0].screenY)/3;
+    count = count - (e.originalEvent.touches[0].clientY)/3;
    
   $('.second').toggleClass('second first');
   $('.hidden').removeClass('hidden');
