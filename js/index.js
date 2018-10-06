@@ -26,10 +26,17 @@ $("*").on('wheel', function(e){
  });
 
 $("*").on('touchstart', function(e){
+  ts = e.originalEvent.touches[0].clientY
   $("*").on('touchmove', function(e){
-    console.log(e.originalEvent.touches[0].screenY);
-  console.log(count);
-  count = count + (e.originalEvent.touches[0].screenY)/3;
+    te = e.originalEvent.changedTouches[0].clientY;
+    // console.log(e.originalEvent.touches[0].screenY);
+    console.log(e.originalEvent.touches[0].clientY)
+  // console.log(count);
+  if(ts>te)
+    count = count + (e.originalEvent.touches[0].screenY)/3;
+  else
+    count = count - (e.originalEvent.touches[0].screenY)/3;
+   
   $('.second').toggleClass('second first');
   $('.hidden').removeClass('hidden');
   if(count >= 150 ){
