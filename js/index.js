@@ -78,10 +78,7 @@ $("*").on('wheel', function(e){
                 trackDocumentNormalize: true,
 
               // Prevent default events for drag/swipe (so the page doesn't scroll when you do those gestures).
-                preventDefault: {
-                  drag: true,
-                  swipe: true
-                }
+              
 
             })
             // Swipe event.
