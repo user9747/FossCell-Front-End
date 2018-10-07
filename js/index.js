@@ -92,24 +92,32 @@ $("*").on('wheel', function(e){
               })
             // Swipe events.
               .on('swipeUp',      function(e, o) { 
+                  $('.second').toggleClass('second first');
+                  $('.hidden').removeClass('hidden');
                   $('.about').fadeOut(500,'linear');
                   $('.about').hide(0);
                   $('.contact').show();
                   console.log("swipe up",o.distance)
                  })
               .on('swipeDown',    function(e, o) { 
+                   $('.second').toggleClass('second first');
+                   $('.hidden').removeClass('hidden');
                    $('.contact').fadeOut(500,'linear');
                    $('.contact').hide(0);
                    $('.about').show();
                   console.log("swipe down",o.distance)
                   })
               .on('swipeLeft',    function(e, o) {
+                  $('.second').toggleClass('second first');
+                  $('.hidden').removeClass('hidden');
                   $('.about').fadeOut(500,'linear');
                   $('.about').hide(0);
                   $('.contact').show();
                   console.log("swipe left",o.distance)
               })
               .on('swipeRight',   function(e, o) { 
+                  $('.second').toggleClass('second first');
+                  $('.hidden').removeClass('hidden');
                   $('.contact').fadeOut(500,'linear');
                   $('.contact').hide(0);
                   $('.about').show();
