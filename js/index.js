@@ -12,12 +12,12 @@ $("*").on('wheel', function(e){
   $('.second').toggleClass('second first');
   $('.hidden').removeClass('hidden');
   if(count >= 150 ){
-    $('.about').fadeOut(500,'linear');
+    $('.about').fadeOut(250,'linear');
     $('.about').hide(0);
     $('.contact').show();
   }
   else{
-    $('.contact').fadeOut(500,'linear');
+    $('.contact').fadeOut(250,'linear');
     $('.contact').hide(0);
     $('.about').show();
     
@@ -93,7 +93,7 @@ $("*").on('wheel', function(e){
               .on('swipeUp',      function(e, o) { 
                   $('.second').toggleClass('second first');
                   $('.hidden').removeClass('hidden');
-                  $('.about').fadeOut(500,'linear');
+                  $('.about').fadeOut(250,'linear');
                   $('.about').hide(0);
                   $('.contact').show();
                   console.log("swipe up",o.distance)
@@ -101,7 +101,7 @@ $("*").on('wheel', function(e){
               .on('swipeDown',    function(e, o) { 
                    $('.second').toggleClass('second first');
                    $('.hidden').removeClass('hidden');
-                   $('.contact').fadeOut(500,'linear');
+                   $('.contact').fadeOut(250,'linear');
                    $('.contact').hide(0);
                    $('.about').show();
                   console.log("swipe down",o.distance)
