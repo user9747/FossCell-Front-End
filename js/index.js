@@ -72,10 +72,7 @@ $("*").on('wheel', function(e){
             .touch({
 
               // Turn on document tracking so stuff works even if the cursor leaves the trackpad.
-                trackDocument: true,
-
-              // Normalize coordinates when/if the cursor leaves the trackpad.
-                trackDocumentNormalize: true,
+                
 
               // Prevent default events for drag/swipe (so the page doesn't scroll when you do those gestures).
               
