@@ -1,3 +1,8 @@
+$('.nav-link').on('click',function() {
+  $('.navbar-collapse').collapse('hide');
+});
+
+
 var count = 0;
 $('.contact').hide(0);
 
