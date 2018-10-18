@@ -15,11 +15,15 @@ $("*").on('wheel', function(e){
     $('.about').fadeOut(250,'linear');
     $('.about').hide(0);
     $('.contact').show();
+    $('.about-nav').removeClass('active');
+    $('.contact-nav').addClass('active');
   }
   else{
     $('.contact').fadeOut(250,'linear');
     $('.contact').hide(0);
     $('.about').show();
+    $('.contact-nav').removeClass('active');
+    $('.about-nav').addClass('active');
     
   }
   if(count > 170){
@@ -96,6 +100,8 @@ $("*").on('wheel', function(e){
                   $('.about').fadeOut(250,'linear');
                   $('.about').hide(0);
                   $('.contact').show();
+                  $('.about-nav').removeClass('active');
+                  $('.contact-nav').addClass('active');
                   console.log("swipe up",o.distance)
                  })
               .on('swipeDown',    function(e, o) { 
@@ -104,6 +110,8 @@ $("*").on('wheel', function(e){
                    $('.contact').fadeOut(250,'linear');
                    $('.contact').hide(0);
                    $('.about').show();
+                   $('.contact-nav').removeClass('active');
+                   $('.about-nav').addClass('active');
                   console.log("swipe down",o.distance)
                   })
               .on('swipeLeft',    function(e, o) {
@@ -112,6 +120,8 @@ $("*").on('wheel', function(e){
                   $('.about').fadeOut(500,'linear');
                   $('.about').hide(0);
                   $('.contact').show();
+                  $('.about-nav').removeClass('active');
+                  $('.contact-nav').addClass('active');
                   console.log("swipe left",o.distance)
               })
               .on('swipeRight',   function(e, o) { 
@@ -120,6 +130,8 @@ $("*").on('wheel', function(e){
                   $('.contact').fadeOut(500,'linear');
                   $('.contact').hide(0);
                   $('.about').show();
+                  $('.contact-nav').removeClass('active');
+                  $('.about-nav').addClass('active');
                   console.log("swipe right",o.distance)
               });
 
@@ -137,11 +149,15 @@ $("*").on('wheel', function(e){
 $('.aboutLink').click(function(){
 	$('.contact').fadeOut(500,'linear');
   	$('.contact').hide(0);
-  	$('.about').show();
+    $('.about').show();
+  $('.contact-nav').removeClass('active');
+  $('.about-nav').addClass('active');
 });
 
 $('.contactLink').click(function(){
 	$('.about').fadeOut(500,'linear');
   	$('.about').hide(0);
-  	$('.contact').show();
+    $('.contact').show();
+  $('.about-nav').removeClass('active');
+  $('.contact-nav').addClass('active');
 });
