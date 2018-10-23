@@ -49,7 +49,6 @@
 
     }
     a:hover{
-      font-family: 'VT323', monospace;
       font-size: 1.8rem;
       letter-spacing: .06rem;     
     }
@@ -110,6 +109,11 @@
       to {margin-top: 0%}
     }
 		 
+    @media only screen and (max-width: 768px){
+      #navbarsExampleDefault{
+        padding-bottom: 100%;
+      }
+    }
 
 
 	</style>
@@ -127,12 +131,12 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault" style="background-color:#282828;padding-bottom:100%; ">
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault" style="background-color:#282828;">
         <ul class="nav navbar-nav ml-auto ">
-          <li class="nav-item active">
+          <li class="nav-item about-nav active">
             <a class="nav-link aboutLink" href="#">About <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item contact-nav">
             <a class="nav-link contactLink" href="#">Contact</a>
           </li>
           
@@ -149,13 +153,12 @@
     			<div class="col-md-6 fadeIn" style="color: white;text-align: center;padding-top: 18vh;padding-bottom: 28vh; padding-left: 7vw;padding-right: 7vw;font-family: 'Geo', sans-serif;">
 
             <h1>-About-</h1>
-    		<p >Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-    		</p>
+    		<p > Free and open-source software (FOSS) cell is a group of students passionate and enthusiastic about free software and technology. Our vision is to bring more student developers into the open-source community and promote open-source mindset in the campus. The cell frequently conducts coding contests and sessions on open-source software. We provide mentorship for student projects. </p>
     	</div>	
     </div>
     <div class="row container-fluid contact">
           <div class="col-md-6"></div>
-          <div class="col-md-6 fadeIn" style=" color: white;text-align: center;padding-top: 16vh;padding-bottom: 25vh; padding-left: 7vw;padding-right: 7vw">
+          <div class="col-md-6 fadeIn" style=" color: white;text-align: center;padding-top: 16vh;padding-bottom: 25vh; padding-left: 7vw;padding-right: 7vw;font-family: 'Geo', sans-serif;">
 
             <h1>-Contact-</h1>
          <ul class="contact">
